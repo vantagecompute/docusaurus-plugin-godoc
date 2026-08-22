@@ -1,0 +1,28 @@
+{
+  "name": "@vantagecompute/docusaurus-plugin-godoc",
+  "version": "0.1.0",
+  "description": "Docusaurus plugin that auto-generates SDK reference docs from Go source using go doc",
+  "main": "src/index.js",
+  "files": [
+    "src/"
+  ],
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "go",
+    "godoc",
+    "documentation",
+    "sdk-reference"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vantagecompute/docusaurus-plugin-godoc.git"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}
