@@ -144,7 +144,7 @@ function renderIndexPage(packageDocs) {
 
   for (const pkg of packageDocs) {
     const desc = pkg.overview ? pkg.overview.split('\n')[0].substring(0, 80) : '';
-    const link = `./${pkg.filename.replace('.md', '')}`;
+    const link = `./${pkg.filename}`;
     lines.push(`| [${pkg.label}](${link}) | ${pkg.types} | ${pkg.functions} | ${desc} |`);
   }
 
