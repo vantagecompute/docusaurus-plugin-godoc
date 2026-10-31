@@ -13,7 +13,7 @@ A Docusaurus plugin that auto-generates SDK reference documentation from Go sour
 ## Installation
 
 ```bash
-npm install @vantagecompute/docusaurus-plugin-godoc
+yarn add @vantagecompute/docusaurus-plugin-godoc
 ```
 
 ## Usage

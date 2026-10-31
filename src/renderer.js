@@ -156,7 +156,7 @@ function renderIndexPage(packageDocs) {
   lines.push('');
   lines.push('```bash');
   lines.push('cd docusaurus');
-  lines.push('npm run gen-godoc');
+  lines.push('yarn gen-godoc');
   lines.push('```');
 
   return lines.join('\n');
