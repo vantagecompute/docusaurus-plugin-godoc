@@ -1,6 +1,6 @@
 {
   "name": "@vantagecompute/docusaurus-plugin-godoc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Docusaurus plugin that auto-generates SDK reference docs from Go source using go doc",
   "main": "src/index.js",
   "files": [
