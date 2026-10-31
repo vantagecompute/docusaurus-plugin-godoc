@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Standalone CLI for generating godoc markdown pages without running a
- * full Docusaurus build. Used by `npm run gen-godoc` in consuming sites.
+ * full Docusaurus build. Used by `yarn gen-godoc` in consuming sites.
  *
  * Usage: node generate.js --project-root ../.. --output-dir ./docs/sdk-reference --packages ./cmd,./internal/cache
  */

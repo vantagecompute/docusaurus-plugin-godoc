@@ -12,7 +12,7 @@ default:
 [group("dev")]
 install:
     @echo "Installing dependencies..."
-    npm install
+    yarn install
 
 # Clean node_modules
 [group("dev")]
@@ -20,7 +20,7 @@ clean:
     @echo "Cleaning node_modules..."
     rm -rf node_modules
 
-# Bump version, commit, tag, push, and create GitHub release to trigger npm publish
+# Bump version, commit, tag, push, and create GitHub release to trigger the npm publish workflow
 [group("release")]
 release version:
     #!/usr/bin/env bash
@@ -30,14 +30,14 @@ release version:
         exit 1
     fi
     echo "Bumping to v{{version}}..."
-    npm version "{{version}}" --no-git-tag-version
+    yarn version "{{version}}"
     git add package.json
     git commit -m "release: v{{version}}"
     git tag "v{{version}}"
     git push && git push origin "v{{version}}"
     echo "Creating GitHub release v{{version}}..."
     gh release create "v{{version}}" --title "v{{version}}" --generate-notes
-    echo "Release v{{version}} created - npm publish will run via GitHub Actions."
+    echo "Release v{{version}} created - the publish workflow will push it to npm."
 
 # Show available commands
 [group("dev")]
